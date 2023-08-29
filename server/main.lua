@@ -8,13 +8,6 @@ local function SendFinalPurchase(args)
             local first,last,store,gun = args.fir, args.las, tonumber(args.stor), tonumber(args.gu)
             local date = os.date()
             local time = os.time()
-            print('fd'..gun)
-            print('a'..first)
-            print('b'..last)
-            print('c'..Config.WeaponsForPurchase[store][gun].ItemLabel)
-            print('d'..Config.DealerLocations[store].BlipInformation.Label)
-            print('e'..date)
-            print('f'..time)
             local embed = {
                 {
                     ["color"] = 23295,
